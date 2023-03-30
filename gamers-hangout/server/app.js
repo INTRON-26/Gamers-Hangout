@@ -12,11 +12,8 @@ app.use(cors());
 const userRouter = require('./routes/UserRoute');
 app.use('/api/users',userRouter);
 
-mongoose.connect(process.env.MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreatedIndex: true,
-}).then(() => {
+mongoose.connect("mongodb+srv://admin:intron%40135@cluster0.cyn8jcn.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true}
+).then(() => {
     console.log('Connected to MongoDB')
 }).catch((err) => {
     console.log(err);
