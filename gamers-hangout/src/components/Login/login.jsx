@@ -19,17 +19,20 @@ function Login() {
 
     return (
         <div>
-            <h1>Login</h1>
+            
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Username:</label>
-                    <input type="text" value={username} onChange={(event) => setUsername(event.target.value)} />
-                </div>
-                <div>
-                    <label>Password:</label>
-                    <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
-                </div>
-                <button type="submit">Login</button>
+                <center>
+                    <h1>Login</h1>
+                    <div>
+                        <label>Username:</label>
+                        <input type="text" value={username} onChange={(event) => setUsername(event.target.value)} />
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
+                    </div>
+                    <button type="submit">Login</button>
+                </center>
             </form>
         </div>
     )
