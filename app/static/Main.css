@@ -1,0 +1,151 @@
+body {
+    background: #100f15;
+    color: #ffffff;
+    margin: 0; /* Reset margin to remove any default spacing */
+    padding: 0; /* Reset padding to remove any default spacing */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #f2efef;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  /* Apply styles to the fixed navbar */
+  .site-header {
+    background-color: #ff4654;
+    position:absolute;
+    z-index: 1000;
+  }
+  
+  
+  /* Ensure the content starts below the fixed navbar */
+  main.container {
+    padding-top: 70px;
+  }
+  
+  /* Optional: Add some space for small screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    main.container {
+      padding-top: 60px;
+    }
+  }
+  
+  .content-section {
+    max-width: 1200px; /* Set the desired maximum width for the posts */
+    width: 1200px; /* Set the width to 100% to make sure it doesn't overflow its container */
+    margin: 0 auto; /* Center the content horizontally within its container */
+    background: #232223e0;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .article-title {
+    color: #ff4654;
+  }
+  
+  a.article-title:hover {
+    color: #ff616f;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+    color: #ffffff;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3;
+    color: #cbd5db;
+  }
+  
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+    
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-top: 35px;
+    margin-left: 50px; /* Add margin-top to create some space between the account image and the account name */
+  }
+  
+  /* Optional: Add a container to hold the account image and account heading */
+  .account-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Optional: Add some space for small screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .account-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .account-img {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  
+    .account-heading {
+      font-size: 2rem;
+    }
+  }
+
+  .author-image {
+    height: 10px; /* Set the desired height of the author image */
+    width: 10px; /* Set the desired width of the author image */
+    margin-right: 8px; /* Adjust the spacing between the image and the name */
+    border-radius: 50%; /* Optional: Apply a circular border to the image */
+  }
+  
+  .author-name {
+    color: #FFA500; /* Set the desired color for the author's name (orange in this example) */
+  }
+
+  .author-name:hover {
+    color: #FFA500;
+    text-decoration: none;
+  }
+
+  /* CSS rule to position the cover photo on the right side */
+.cover-photo {
+  position: absolute;
+  top: 5;
+  right: 0;
+  z-index: -1; /* To position it behind the content */
+  /* Add any additional styling as needed */
+}
+

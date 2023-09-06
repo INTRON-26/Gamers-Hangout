@@ -1,0 +1,102 @@
+/* Global styles */
+body {
+    background: #100f15;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #f2efef;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .site-header {
+    background-color: #ff4654;
+    position: absolute;
+    z-index: 1000;
+  }
+  
+  main.container {
+    padding-top: 70px;
+  }
+  
+  /* Optional: Add some space for small screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    main.container {
+      padding-top: 60px;
+    }
+  }
+  
+  /* Content sections */
+  .content-section {
+    background: #232223e0;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .about-section h1 {
+    color: #ff4654;
+    margin-bottom: 10px;
+  }
+  
+  /* Team section */
+  .team-section h2 {
+    color: #ff4654;
+    margin-bottom: 20px;
+  }
+  
+  .team-member {
+    margin-bottom: 20px;
+  }
+  
+  .author-image {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .author-name {
+    color: #FFA500;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Optional: Add a container to hold the account image and account heading */
+  .account-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Optional: Add some space for small screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .account-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .account-img {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  
+    .account-heading {
+      font-size: 2rem;
+    }
+  }
+  
